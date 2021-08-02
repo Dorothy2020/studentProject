@@ -15,6 +15,7 @@ class Student(models.Model):
     Medical_report=models.FileField()
     Course_name=models.CharField(max_length=12)
     Roll_number=models.CharField(max_length=15)
+    Profile = models.ImageField(upload_to ='Profile/% Y/% m/% d/')
     GENDER_CHOICES=(
         (u'M',u'Male'),
         (u'F',u'Female'),
@@ -30,6 +31,8 @@ class Student(models.Model):
     )
 
     language=models.CharField(max_length=6,choices=LANGUAGE_CHOICES)
+
+
 
  
     

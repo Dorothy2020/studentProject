@@ -12,24 +12,30 @@
     </head>
     <body>
         <style>
+            div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(104, 59, 59);
+  padding: 50px;
+  margin: 20px;
+  margin-left: 400px;
+ 
+}
             h1{
                 color: black;
-                text-align: center;
+                 text-align: center; 
             }
-            form{
-                text-align: center;
-                
-            }
+           
             body{
-                background-color: cadetblue;
+                background-color:rgb(121, 114, 112);
                 
-            }
+            } 
         </style>
         <h1>STUDENT REGISTRATION FORM</h1>
-       
+    <div>   
 <form method="POST">
     {{form.as_p}}
 </form>
-
+</div>
     </body>
     </html>
